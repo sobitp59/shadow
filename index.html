@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>myshadow</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+             <nav class="navbar">
+                 <h1 class="nav-logo"> <i class="fa-solid fa-bolt-lightning"></i> shadow</h1>
+                 <button class="learn-button">learn box-shadow</button>
+                </nav>
+                <div class="learn-shadow-content hide" id="" editable="false">
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita laboriosam debitis ducimus fugit aliquam sed amet cum accusamus asperiores tenetur quod blanditiis magnam, odit eveniet assumenda nesciunt dolorum? Dolores, numquam alias dolore rem delectus eius asperiores. Doloremque, iure distinctio dolorem pariatur eius, corrupti dicta suscipit totam velit tenetur aliquam ab consectetur, quia voluptatem. Minima saepe officia voluptates maxime tempore. Pariatur, consequatur officia repellat ad nihil distinctio quam id neque molestias maiores quae aliquid fugiat labore. Eligendi, atque. Commodi possimus adipisci iusto fugiat molestias voluptate, recusandae quis perspiciatis illo molestiae, architecto cumque ad odit. Officia enim odit iste totam tempore ut?
+                </div>
+        </header>
+        
+        <main>
+            <article class="shadow-box" id="shadow-box"> </article>
+            <section class="tool-box">
+                    <article>
+                        <label for=""> 
+                            offset x(px)
+                        </label>
+                        <input id="offsetx" type="number" min="1" max="100" value="5">    
+                    </article>
+                    
+                    <article>
+                        <label for=""> 
+                            offset y(px)
+                        </label>
+                        <input id="offsety" type="number" min="1" max="100" value="5">
+                    </article>
+                    
+                    <article>
+                        <label for=""> 
+                            blur(px)
+                        </label>
+                        <input id="blur" type="number" min="0" max="100" value="0">
+                    </article>
+                    
+                    <article>
+                        <label for=""> 
+                            spread(px)
+                        </label>
+                        <input id="spread" type="number" min="0" max="100" value="5">
+                    </article>
+                    
+            </section>
+            <article class="color-tool">
+                <!-- <label for=""> 
+                    color
+                </label> -->
+                <input id="color" class="color" type="color" value="#000000">
+            </article>
+        </main>
+        
+        <footer class="footer">
+            <section class="footer-top">
+                <h1 class="nav-logo"> <i class="fa-solid fa-bolt-lightning"></i> shadow</h1>
+                <p>create awesome shadows</p>
+            </section>
+            <section class="footer-bottom">
+                <a target="_blank" class="footer-link" href=""> <i class="fa-brands fa-github"></i> source code </a>
+                <a target="_blank" class="footer-link" href=""> <i class="fa-brands fa-twitter"></i> connect</a>
+            </section>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
