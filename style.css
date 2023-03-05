@@ -90,6 +90,7 @@ body{
     left: 0;
     right: 0;
     margin: 0 auto;
+    z-index: 10000;
 }
 
 .hide{
