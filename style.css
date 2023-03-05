@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
 *, *::after, *::before{
     margin: 0;
@@ -93,6 +94,31 @@ body{
     z-index: 10000;
 }
 
+.learn-shadow-content > h2, h3{
+    margin-bottom: 10px;
+}
+
+.learn-shadow-content > ul > li{
+    margin-bottom: 10px;
+}
+
+.learn-shadow-content > ul > li > span{
+    font-weight: bold;
+}
+
+.learn-more{
+    text-decoration: underline;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    
+
+}
+
+.learn-shadow-content > ul{
+    list-style: none;
+}
+
 .hide{
     display: none;
 }
@@ -157,6 +183,21 @@ input.color{
     outline: 2px solid rgb(153, 0, 255);
     outline-offset: 2px;
 }
+
+
+/* Learn SHADOW */
+.css-code{
+    overflow: scroll;
+    width: 100%;
+    padding: 10px;
+    background: rgb(14, 0, 53);
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: 12px;
+}
+
+/* Learn SHADOW */
+
 
 /* input.inset{
     width: 90px;
