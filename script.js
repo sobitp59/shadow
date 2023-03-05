@@ -5,6 +5,7 @@ const spread = document.querySelector('#spread');
 const color = document.querySelector('#color');
 const learnButton = document.querySelector('.learn-button');
 const learnShadowContent = document.querySelector('.learn-shadow-content');
+const copyMessage = document.querySelector('.copymessage');
 
 const shadowBox = document.querySelector('#shadow-box')
 
@@ -26,10 +27,16 @@ render();
 
 
 shadowBox.addEventListener('click', ()=>{
-  navigator.clipboard
-    .readText()
-    .then((clipText) => clipText);
-  console.log('hell')
+  let copyText = shadowBox.innerText;
+  navigator.clipboard.writeText(copyText)
+  .then(() => {
+    console.log(copyMessage)
+    copyMessage.classList.remove('hideCopy')
+    setInterval(() => {
+      copyMessage.classList.add('hideCopy')
+    }, 1500)
+    console.log(copyText)
+  })
 })
 
 
